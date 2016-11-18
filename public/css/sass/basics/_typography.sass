@@ -1,0 +1,73 @@
+*
+  color: $text-color
+
+h1,
+h2,
+h3,
+h4,
+h5
+  font-family: $header-font
+  color: $text-color
+  margin: 0
+  letter-spacing: 0.05em
+
+h1
+  font-size: 58px
+
+  @media (max-width: $break-size)
+    font-size: 48px
+
+  @media (max-width: $break-size-mobile)
+    font-size: 38px
+
+h2
+  font-size: 50px
+
+  @media (max-width: $break-size)
+    font-size: 38px
+
+  @media (max-width: $break-size-mobile)
+    font-size: 24px
+
+h3
+  font-size: 32px
+  display: inline-block
+
+  &.small
+    font-size: 24px
+    margin: 10px 0
+
+  &.disabled
+    color: $disabled-text-color
+
+  &.tight
+    margin: 0
+    line-height: 0.8em
+
+  &.underline
+    position: relative
+
+    &::after
+      content: " "
+      position:  absolute
+      bottom: -6px
+      left: 0
+      right: 0
+      height: 2px
+      background:  $disabled-text-color
+
+p
+  font-size: 16px
+
+  strong
+    margin-right: 10px
+
+a
+  &:hover
+    text-decoration: none
+
+.logo
+  font-family: 'Nothing You Could Do', cursive
+
+.warning
+  margin: 10px 0
